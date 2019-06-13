@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+    </h:head>
+    <h:body>
+        You lost your view! One second while we refresh.
+        <a style="display: none;" id="go-back" href="#{requestScope['javax.servlet.error.request_uri']}">Go Back!</a>
+        <script type="text/javascript">
+            document.getElementById("go-back").click();
+        </script>
+    </h:body>
+</html>
